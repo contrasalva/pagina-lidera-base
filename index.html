@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lidera Consultores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Open+Sans:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo"><img src="img/logo.png" alt="Lidera Consultores"></a>
+      <ul class="nav__links">
+        <li><a href="#hero" class="nav__link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#soluciones" class="nav__link">Soluciones</a></li>
+        <li><a href="#impacto" class="nav__link">Impacto</a></li>
+        <li><a href="#equipo" class="nav__link">Equipo</a></li>
+        <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="img/hero-poster.jpg">
+      <source src="img/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero__content container">
+      <h1 class="hero__title">Soluciones que <span class="hero__accent">transforman</span></h1>
+      <p class="hero__subtitle">Consultoría estratégica para organizaciones, educación y desarrollo comunitario.</p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--highlight">Conversemos</a>
+        <a href="#soluciones" class="btn btn--outline">Nuestras soluciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section class="section section--light" id="nosotros">
+    <div class="container">
+      <h2 class="section__title">Nosotros</h2>
+      <p class="section__subtitle">Quiénes somos y qué nos mueve</p>
+      <div class="nosotros__grid">
+        <div class="nosotros__text">
+          <p class="nosotros__lead">En Lidera Consultores creemos en el poder de las personas y las organizaciones para generar cambios significativos.</p>
+          <p>Acompañamos a empresas, instituciones educativas y comunidades en su camino hacia el desarrollo sostenible. Con años de experiencia en gestión de personas, clima organizacional y desarrollo comunitario, nuestro equipo multidisciplinario entrega soluciones pragmáticas y cercanas.</p>
+        </div>
+        <div class="nosotros__values">
+          <div class="value-card">
+            <div class="value-card__icon">
+              <img src="img/icon-mision.svg" alt="Misión">
+            </div>
+            <div class="value-card__content">
+              <h3>Misión</h3>
+              <p>Potenciar el talento y la gestión de personas para impulsar organizaciones más humanas y eficientes.</p>
+            </div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__icon">
+              <img src="img/icon-vision.svg" alt="Visión">
+            </div>
+            <div class="value-card__content">
+              <h3>Visión</h3>
+              <p>Ser referentes en consultoría integral para el desarrollo organizacional, educativo y comunitario en Chile.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soluciones -->
+  <section class="section section--photo" id="soluciones">
+    <div class="container">
+      <h2 class="section__title">Soluciones</h2>
+      <p class="section__subtitle">Tres pilares para un desarrollo integral</p>
+
+      <div class="soluciones__filters">
+        <button class="filter-btn active" data-pilar="all">Todos</button>
+        <button class="filter-btn" data-pilar="organizaciones">Organizaciones</button>
+        <button class="filter-btn" data-pilar="educativas">Educativas</button>
+        <button class="filter-btn" data-pilar="comunitario">Comunitario</button>
+      </div>
+
+      <div class="soluciones__grid">
+        <div class="sol-card" data-pilar="organizaciones">
+          <span class="sol-card__badge">Organizaciones</span>
+          <h3>Reclutamiento y Selección</h3>
+          <p>Atraemos y seleccionamos al mejor talento para tu organización con procesos rigurosos y personalizados.</p>
+        </div>
+        <div class="sol-card" data-pilar="organizaciones">
+          <span class="sol-card__badge">Organizaciones</span>
+          <h3>Perfiles de Cargo</h3>
+          <p>Diseñamos perfiles claros y alineados con la estrategia de tu negocio para una gestión eficiente del talento.</p>
+        </div>
+        <div class="sol-card" data-pilar="organizaciones">
+          <span class="sol-card__badge">Organizaciones</span>
+          <h3>Evaluaciones de Desempeño</h3>
+          <p>Implementamos sistemas de evaluación que impulsan el crecimiento y la productividad de tu equipo.</p>
+        </div>
+        <div class="sol-card" data-pilar="organizaciones">
+          <span class="sol-card__badge">Organizaciones</span>
+          <h3>Clima Organizacional</h3>
+          <p>Diagnosticamos y mejoramos el ambiente laboral para construir equipos más comprometidos y felices.</p>
+        </div>
+        <div class="sol-card" data-pilar="organizaciones">
+          <span class="sol-card__badge">Organizaciones</span>
+          <h3>CEAL-SM SUSESO</h3>
+          <p>Aplicamos y asesoramos en el Cuestionario de Evaluación de Ambiente Laboral y Salud Mental exigido por SUSESO.</p>
+        </div>
+        <div class="sol-card" data-pilar="educativas">
+          <span class="sol-card__badge sol-card__badge--gold">Educativas</span>
+          <h3>Talleres y Capacitaciones</h3>
+          <p>Formación en liderazgo, motivación, trabajo en equipo, resolución de conflictos y comunicación efectiva.</p>
+        </div>
+        <div class="sol-card" data-pilar="comunitario">
+          <span class="sol-card__badge sol-card__badge--gold">Comunitario</span>
+          <h3>Desarrollo Comunitario</h3>
+          <p>Acompañamos a comunidades en procesos participativos para el desarrollo sostenible de sus territorios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impacto -->
+  <section class="section section--nodes" id="impacto">
+    <div class="container">
+      <h2 class="section__title">Impacto</h2>
+      <p class="section__subtitle">Resultados que hablan por sí solos</p>
+      <div class="impacto__grid">
+        <div class="impacto__item">
+          <span class="impacto__number" data-count="150">0</span>
+          <span class="impacto__label">Organizaciones asesoradas</span>
+        </div>
+        <div class="impacto__item">
+          <span class="impacto__number" data-count="500">0</span>
+          <span class="impacto__label">Personas evaluadas</span>
+        </div>
+        <div class="impacto__item">
+          <span class="impacto__number" data-count="12">0</span>
+          <span class="impacto__label">Años de experiencia</span>
+        </div>
+        <div class="impacto__item">
+          <span class="impacto__number" data-count="95">0</span>
+          <span class="impacto__label">% de satisfacción</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section class="section section--light" id="equipo">
+    <div class="container">
+      <h2 class="section__title">Equipo</h2>
+      <p class="section__subtitle">Profesionales comprometidos con tu desarrollo</p>
+      <div class="equipo__grid">
+        <div class="team-card">
+          <div class="team-card__avatar">
+            <img src="img/avatar-placeholder.svg" alt="Miembro del equipo" loading="lazy">
+          </div>
+          <h3 class="team-card__name">Nombre Apellido</h3>
+          <span class="team-card__role">Director General</span>
+          <p class="team-card__bio">Profesional con amplia experiencia en gestión de personas y desarrollo organizacional.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">
+            <img src="img/avatar-placeholder.svg" alt="Miembro del equipo" loading="lazy">
+          </div>
+          <h3 class="team-card__name">Nombre Apellido</h3>
+          <span class="team-card__role">Consultora Senior</span>
+          <p class="team-card__bio">Especialista en clima organizacional, evaluaciones de desempeño y procesos de selección.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__avatar">
+            <img src="img/avatar-placeholder.svg" alt="Miembro del equipo" loading="lazy">
+          </div>
+          <h3 class="team-card__name">Nombre Apellido</h3>
+          <span class="team-card__role">Consultora Educativa</span>
+          <p class="team-card__bio">Experta en diseño e implementación de talleres de liderazgo y trabajo en equipo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <h2 class="section__title">Testimonios</h2>
+      <p class="section__subtitle">Lo que dicen nuestros clientes</p>
+      <div class="testimonios__slider" id="testimoniosSlider">
+        <div class="testimonio-card active">
+          <div class="testimonio-card__stars">★★★★★</div>
+          <p class="testimonio-card__text">"Lidera transformó la forma en que gestionamos nuestro talento. Su enfoque cercano y profesional marcó la diferencia."</p>
+          <div class="testimonio-card__author">
+            <strong>Gerente de Personas</strong>
+            <span>Empresa del rubro minero</span>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-card__stars">★★★★★</div>
+          <p class="testimonio-card__text">"Los talleres de liderazgo superaron nuestras expectativas. El equipo quedó motivado y con herramientas concretas para aplicar."</p>
+          <div class="testimonio-card__author">
+            <strong>Directora de Escuela</strong>
+            <span>Institución educativa</span>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-card__stars">★★★★★</div>
+          <p class="testimonio-card__text">"El proceso de reclutamiento fue impecable. Encontraron exactamente el perfil que necesitábamos en tiempo récord."</p>
+          <div class="testimonio-card__author">
+            <strong>Gerente General</strong>
+            <span>Empresa de servicios</span>
+          </div>
+        </div>
+        <div class="testimonios__controls">
+          <button class="testimonios__dot active" data-slide="0"></button>
+          <button class="testimonios__dot" data-slide="1"></button>
+          <button class="testimonios__dot" data-slide="2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section section--light" id="blog">
+    <div class="container">
+      <h2 class="section__title">Blog</h2>
+      <p class="section__subtitle">Recursos, reflexiones y novedades</p>
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="img/blog-placeholder.svg" alt="Artículo" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">Oct 2023</span>
+            <h3>Cómo mejorar el clima organizacional en tiempos de cambio</h3>
+            <p>Estrategias prácticas para mantener un ambiente laboral saludable durante procesos de transformación.</p>
+            <a href="#" class="blog-card__link">Leer más →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="img/blog-placeholder.svg" alt="Artículo" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">Oct 2023</span>
+            <h3>La importancia de las evaluaciones de desempeño</h3>
+            <p>Por qué medir el rendimiento es clave para el crecimiento de tu organización.</p>
+            <a href="#" class="blog-card__link">Leer más →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <img src="img/blog-placeholder.svg" alt="Artículo" loading="lazy">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">Nov 2023</span>
+            <h3>Liderazgo que inspira: claves para equipos exitosos</h3>
+            <p>Las habilidades que todo líder necesita para construir equipos de alto rendimiento.</p>
+            <a href="#" class="blog-card__link">Leer más →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section section--nodes" id="contacto">
+    <div class="container">
+      <h2 class="section__title">Contacto</h2>
+      <p class="section__subtitle">Hablemos de cómo podemos ayudarte</p>
+      <div class="contacto__grid">
+        <form class="contacto__form" id="contactForm">
+          <div class="form__group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+          </div>
+          <div class="form__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--highlight btn--full">Enviar mensaje</button>
+        </form>
+        <div class="contacto__info">
+          <div class="contacto__item">
+            <span class="contacto__icon">&#x1F4CD;</span>
+            <div>
+              <strong>Dirección</strong>
+              <p>Santiago, Chile</p>
+            </div>
+          </div>
+          <div class="contacto__item">
+            <span class="contacto__icon">&#x1F4E7;</span>
+            <div>
+              <strong>Email</strong>
+              <p>contacto@lideraconsultores.cl</p>
+            </div>
+          </div>
+          <div class="contacto__item">
+            <span class="contacto__icon">&#x1F4DE;</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+56 9 XXXX XXXX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="img/logo.png" alt="Lidera Consultores" class="footer__logo">
+        <p>Consultoría estratégica para organizaciones, educación y desarrollo comunitario.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>contacto@lideraconsultores.cl</p>
+        <p>+56 9 XXXX XXXX</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2024 Lidera Consultores. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/569XXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
